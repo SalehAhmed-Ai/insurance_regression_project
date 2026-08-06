@@ -11,14 +11,16 @@ st.set_page_config(page_title="Medical Insurance Cost Prediction", page_icon="ðŸ
 
 st.markdown("""
 <style>
-.stApp{
+..stApp{
     background-color:#ffffff;
-    color:#000000;
 }
 
-/* Text */
-h1,h2,h3,p,label,div{
-    color:#000000;
+h1,h2,h3{
+    color:#111827;
+}
+
+p{
+    color:#374151;
 }
 
 /* Buttons */
