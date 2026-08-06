@@ -16,10 +16,32 @@ st.markdown("""
     color:#000000;
 }
 
-h1,h2,h3,p,label{
-    color:#000000 !important;
+/* Text */
+h1,h2,h3,p,label,div{
+    color:#000000;
 }
 
+/* Buttons */
+.stButton > button{
+    background-color:#1B5E20 !important;
+    color:#FFFFFF !important;
+    border:none !important;
+    border-radius:8px !important;
+    padding:0.6rem 1.5rem !important;
+    font-weight:600 !important;
+}
+
+.stButton > button:hover{
+    background-color:#2E7D32 !important;
+    color:#FFFFFF !important;
+}
+
+.stButton > button p,
+.stButton > button span{
+    color:#FFFFFF !important;
+}
+
+/* Result Card */
 .result-card{
     background:#f5f5f5;
     padding:20px;
