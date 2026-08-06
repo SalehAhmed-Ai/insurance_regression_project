@@ -11,32 +11,26 @@ st.set_page_config(page_title="Medical Insurance Cost Prediction", page_icon="ðŸ
 
 st.markdown("""
 <style>
-    .stApp { background-color: #FFFFFF; }
-    h1, h2, h3 { color: #1B1B1B; }
-    div.stButton > button {
-        background-color: #1B5E20;
-        color: white;
-        border-radius: 6px;
-        border: none;
-        padding: 0.5em 2em;
-        font-weight: 600;
-    }
-    div.stButton > button:hover {
-        background-color: #2E7D32;
-        color: white;
-    }
-    .result-card {
-        background-color: #F2F2F2;
-        border-radius: 8px;
-        padding: 20px;
-        text-align: center;
-        margin-top: 15px;
-    }
-    .result-value {
-        font-size: 36px;
-        font-weight: 700;
-        color: #1B5E20;
-    }
+.stApp{
+    background-color:#ffffff;
+    color:#000000;
+}
+
+h1,h2,h3,p,label{
+    color:#000000 !important;
+}
+
+.result-card{
+    background:#f5f5f5;
+    padding:20px;
+    border-radius:10px;
+}
+
+.result-value{
+    color:#1B5E20;
+    font-size:36px;
+    font-weight:bold;
+}
 </style>
 """, unsafe_allow_html=True)
 
