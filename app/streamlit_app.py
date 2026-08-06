@@ -55,6 +55,23 @@ p{
     font-size:36px;
     font-weight:bold;
 }
+.result-card{
+    background:#f5f5f5;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    color:#111827 !important;
+}
+
+.result-card div{
+    color:#111827 !important;
+}
+
+.result-value{
+    color:#1B5E20 !important;
+    font-size:36px;
+    font-weight:bold;
+}
 </style>
 """, unsafe_allow_html=True)
 
