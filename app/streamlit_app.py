@@ -1,6 +1,11 @@
 import streamlit as st
 import pandas as pd
 import joblib
+from pathlib import Path
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+MODELS_DIR = BASE_DIR / "models"
 
 st.set_page_config(page_title="Medical Insurance Cost Prediction", page_icon="🏥", layout="centered")
 
@@ -37,27 +42,27 @@ st.markdown("""
 
 MODELS = {
     "Random Forest": {
-        "file": "../models/random_forest.pkl",
+        "file": MODELS_DIR / "random_forest.pkl",
         "r2": 0.901,
         "mae": 2415,
         "rmse": 4262,
     },
     "Decision Tree": {
-        "file": "../models/decision_tree.pkl",
+        "file": MODELS_DIR / "decision_tree.pkl",
         "r2": 0.892,
         "mae": 2693,
         "rmse": 4461,
     },
     "Linear Regression": {
-        "file": "../models/linear_regression.pkl",
+        "file": MODELS_DIR / "linear_regression.pkl",
         "r2": 0.886,
         "mae": 2829,
         "rmse": 4573,
     }
 }
 
-FEATURE_COLUMNS = joblib.load("../models/feature_columns.pkl")
-SCALER = joblib.load("../models/scaler.pkl")
+FEATURE_COLUMNS = joblib.load(MODELS_DIR / "feature_columns.pkl")
+SCALER = joblib.load(MODELS_DIR / "scaler.pkl")
 
 
 def build_features(age, sex, bmi, children, smoker, region):
